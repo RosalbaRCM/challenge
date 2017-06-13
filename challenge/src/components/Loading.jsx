@@ -14,7 +14,7 @@ class Loading extends Component {
     state = {
         text: this.props.text
     }
-    /* no
+
     componentDidMount() {
         const stopper = this.originalText + '...'
         this.interval = setInterval(() => {

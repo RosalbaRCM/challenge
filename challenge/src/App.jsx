@@ -21,9 +21,13 @@ class App extends Component {
               {!this.props.slices ? <Loading /> : <DonutChart slices={this.props.slices} colors={colors} risk={this.props.risk} labels={labels} />}
             </div>
             <div>
-              <label>Select the risk </label>
+              <p>Select the risk </p>
               <input
-                type="number" defaultValue="1" min="1" max="10" onChange={(e) => {
+                type="number"
+                defaultValue="1"
+                min="1"
+                max="10"
+                onChange={(e) => {
                   e.preventDefault();
                   this.props.onChange(e.target.value);
                 }}
@@ -39,6 +43,7 @@ class App extends Component {
 App.PropTypes = {
   risk: PropTypes.string.isRequired,
   slices: PropTypes.array.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = state => ({
