@@ -6,7 +6,7 @@ import * as actions from './actions/actions';
 import DonutChart from './components/DonutChart';
 
 
-const App = props => {
+export const App = props => {
     const labels = ['Stocks', 'Bonds', 'ETFs', 'Cash', 'Commodities', 'Fixed Income'];
     const colors = ['#900', '#090', '#009', '#ff0', '#ffa500', '#0000ff'];
     return (
@@ -27,7 +27,7 @@ const App = props => {
                 min="1"
                 max="10"
                 onChange={(e) => {
-                  e.preventDefault();
+                 /* This lunch an error in the test: e.preventDefault();*/
                   props.onChange(e.target.value);
                 }}
               />
@@ -37,7 +37,6 @@ const App = props => {
       </div>
     );
   }
-
 
 App.PropTypes = {
   risk: PropTypes.string.isRequired,
