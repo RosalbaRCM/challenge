@@ -1,10 +1,10 @@
 # DonutChart
 A simple DonutChart using Reactjs and Redux.
 
-#Run
-Using yarn:
+## Run
+### Using yarn:
 ```$ yarn && yarn start```
 
-Using npm:
+### Using npm:
 ```$ npm install```
 ```$ npm run start```
