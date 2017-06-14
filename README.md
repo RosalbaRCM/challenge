@@ -7,4 +7,5 @@ A simple DonutChart using Reactjs and Redux.
 
 ### Using npm:
 ```$ npm install```
+
 ```$ npm run start```

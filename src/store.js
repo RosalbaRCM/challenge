@@ -8,6 +8,10 @@ const defaultState = {
   slices: slice['1'],
 };
 
-const store = createStore(slices, defaultState);
+const store = createStore(
+   slices, defaultState
++  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+ );
+
 
 export default store;
