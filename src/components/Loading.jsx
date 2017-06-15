@@ -28,17 +28,10 @@ class Loading extends Component {
     }    
     render() {
         return (
-            <p style={styles.content}>
+            <p className="loading">
                 {this.state.text}
             </p>
         );
-    }
-}
-
-const styles = {
-    content: {
-        textAlign: 'center',
-        fontSize: '35px'
     }
 }
 

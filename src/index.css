@@ -57,3 +57,7 @@ figure {
   margin-left: -15px;
   margin-right: -15px;
 }
+.loading{
+   text-align: center;
+   font-size: 35px;
+}

@@ -4,7 +4,6 @@ import chaiEnzyme from 'chai-enzyme';
 import { shallow } from 'enzyme';
 import sinon from 'sinon';
 import { mount } from 'enzyme';
-chai.use(chaiEnzyme());
 import { App } from '../App';
 import DonutChart from '../components/DonutChart';
 
@@ -20,7 +19,7 @@ it('renders three <DonutChart /> components', () => {
     expect(wrapper.find(DonutChart)).to.have.length(1);
   });
 
-  it('simulates click events', () => {
+  it('simulates onChange events', () => {
     const onButtonClick = sinon.spy();
     const wrapper = shallow(
       <App onChange={onButtonClick} />
