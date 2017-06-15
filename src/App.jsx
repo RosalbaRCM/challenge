@@ -7,7 +7,7 @@ import DonutChart from './components/DonutChart';
 
 export const App = props => {
     const labels = ['Stocks', 'Bonds', 'ETFs', 'Cash', 'Commodities', 'Fixed Income'];
-    const colors = ['#900', '#090', '#009', '#ff0', '#ffa500', '#0000ff'];
+    const colors=['#FF5722','#b1c94e','#377bbc','#ce4b99', '#6600CC'  ,'#ffa500'];
     return (
       <div className="container">
         <div className="panel panel-default">
