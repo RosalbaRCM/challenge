@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Loading from './components/Loading';
 import * as actions from './actions/actions';
 import DonutChart from './components/DonutChart';
 
@@ -17,7 +16,7 @@ export const App = props => {
           </div>
           <div className="panel-body">
             <div>
-              {!props.slices ? <Loading /> : <DonutChart slices={props.slices} colors={colors} risk={props.risk} labels={labels} />}
+              {!props.slices ?<p className="loading"> Loading...</p> : <DonutChart slices={props.slices} colors={colors} risk={props.risk} labels={labels} />}
             </div>
             <div>
               <p>Select the risk </p>
