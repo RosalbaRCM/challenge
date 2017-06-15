@@ -24,7 +24,7 @@ it('renders three <DonutChart /> components', () => {
     const wrapper = shallow(
       <App onChange={onButtonClick} />
     );
-    wrapper.find('input').simulate('change', { target: { value: props.risk } });
+    wrapper.find('input').simulate('change', { target: { value: props.risk }, preventDefault: () => { }});
     expect(onButtonClick.calledOnce).to.equal(true);
   });
 

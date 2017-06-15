@@ -26,7 +26,7 @@ export const App = props => {
                 min="1"
                 max="10"
                 onChange={(e) => {
-                 /* This lunch an error in the test: e.preventDefault();*/
+                  e.preventDefault();
                   props.onChange(e.target.value);
                 }}
               />
