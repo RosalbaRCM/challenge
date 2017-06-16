@@ -47,10 +47,5 @@ const mapStateToProps = state => ({
   slices: state.slices,
   risk: state.risk,
 });
-const mapDispatchToProps = dispatch => ({
-  onChange: (risk) => {
-    dispatch(actions.updateRisk(risk));
-  },
-});
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, {onChange:actions.updateRisk})(App);
