@@ -10,8 +10,6 @@ import DonutChart from '../components/DonutChart';
 const props = {
   slices: [10,20,3,2,5,60],
   risk: 10,
-  labels:['Stocks', 'Bonds', 'ETFs', 'Cash', 'Commodities', 'Fixed Income'],
-  colors: ['#900', '#090', '#009', '#ff0', '#ffa500', '#0000ff'],
 }
 
 describe('tests for <DonutChart> ', () => {
